@@ -1,20 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <title>East Asia Three Country - Welcom</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
 
-  <style>
-    #night_day{
-      background-color: black;
-      color:white;
-      padding: 10px 25px;
-      text-align: center;
-      font-size: 12px;
-    }
-  </style>
-
+  <script src="colors.js"></script>
 </head>
 
 <body>
@@ -44,16 +36,8 @@
   ">
   -->
   <input type="button" value="night" onclick="
-  var target = document.querySelector('body');
-  if(this.value === 'night'){
-    target.style.backgroundColor='black'
-    target.style.color = 'white';
-    this.value = 'day';
-  }else{
-    target.style.backgroundColor='white'
-    target.style.color = 'black';
-    this.value = 'night';
-  }">
+  nightDayHandler(this);
+  ">
 
   <h1><a href='index.html'> East Asia Three Country</a></h1>
   <div id="grid">
